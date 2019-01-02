@@ -1,18 +1,18 @@
 package com.company;
 
-public class Animal implements Meal{
+public abstract class Animal implements Meat{
     double weight;
 
     @Override
-    public void getWeight() {
+    public double getWeight() { //если метод начинается с get то это какбЭ намекает на то, шо надо что-то вернуть
+        return weight;
     }
 
-        public void toEat(){ //абстрактный метод, принимает еду и возвращает новый вес животного.
-
-            System.out.println();
-        return ;
-    }
-
-
+        public abstract double toEat(Meal meal); /*абстрактный метод, принимает еду и возвращает новый вес животного если в классе
+        есть хоть один абстрактный метод, то весь класс тоже должен быть абстрактным*/
 
 }
+
+
+
+

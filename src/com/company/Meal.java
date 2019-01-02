@@ -1,5 +1,5 @@
 package com.company;
 
 public interface Meal {
-    public void getWeight();
+    double getWeight(); //в интерфейске все методы - public
 }
